@@ -1,0 +1,30 @@
+<form method="post" autocomplete="off">
+<div class="signup-div"> 
+	<h3>New user? Sign up </h3>
+	<ul>
+		<li>
+		    <input type="text" name="fullname" placeholder="Full Name"/>
+		</li>
+		<li>
+		    <input type="text" name="username" placeholder="Username"/>
+		</li>
+		<li>
+		    <input type="email" name="email" placeholder="Email"/>
+		</li>
+		<li>
+			<input type="password" name="password" placeholder="Password"/>
+		</li>
+		<li>
+			<input type="submit" name="signup" Value="Signup">
+		</li>
+	<?php  
+		if (isset($signupError)) {
+			echo '<li class="error-li">
+	  		<div class="span-fp-error">' . $signupError . '</div>
+			 </li>';
+		}
+	?>
+	</ul> 
+	
+</div>
+</form>
